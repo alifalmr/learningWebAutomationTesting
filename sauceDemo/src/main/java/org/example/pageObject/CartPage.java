@@ -32,7 +32,7 @@ public class CartPage {
     }
 
     public void clickRemoveBtn(String productName){
-        driver.findElement(By.xpath("//button[@id='remove-" + productName.toLowerCase().replace(" ","-") + ")']")).click();
+        driver.findElement(By.xpath("//button[@id='remove-" + productName.toLowerCase().replace(" ","-") + "']")).click();
     }
 
     public void clickCheckoutBtn(){

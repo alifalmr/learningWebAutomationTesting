@@ -1,2 +1,4 @@
-org\example\pageObject\InventoryPage.class
+org\example\pageObject\CheckoutOnePage.class
 org\example\pageObject\LoginPage.class
+org\example\pageObject\CartPage.class
+org\example\pageObject\InventoryPage.class

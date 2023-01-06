@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 12051173300,
+  "duration": 13514184800,
   "status": "passed"
 });
 formatter.scenario({
@@ -32,38 +32,78 @@ formatter.step({
 formatter.step({
   "line": 7,
   "name": "user input \"standard_user\" as userName and input \"secret_sauce\" as password",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 8,
   "name": "user is on inventory page",
-  "keyword": "And "
+  "keyword": "Then "
 });
 formatter.step({
   "line": 9,
   "name": "user choose \"Name (Z to A)\" as option for sorting the items",
-  "keyword": "And "
+  "keyword": "When "
 });
 formatter.step({
   "line": 10,
   "name": "user click add to cart button for \"Test.allTheThings() T-Shirt (Red)\" as productName",
-  "keyword": "When "
+  "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "user can see the cart bedge appeared",
+  "name": "user click add to cart button for \"Sauce Labs Onesie\" as productName",
   "keyword": "And "
 });
 formatter.step({
   "line": 12,
+  "name": "user can see the cart bedge appeared",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 13,
   "name": "user click cart button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 14,
+  "name": "user will be directed to cart page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 15,
+  "name": "\"Test.allTheThings() T-Shirt (Red)\" as productName appeared on card page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 16,
+  "name": "\"Sauce Labs Onesie\" as productName appeared on card page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 17,
+  "name": "user click remove item for \"Sauce Labs Onesie\" as productName",
   "keyword": "And "
+});
+formatter.step({
+  "line": 18,
+  "name": "user click checkout button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 19,
+  "name": "user is on checkout step one page",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 20,
+  "name": "user input \"Alifa\" as firstName and input \"Almira\" as lastName and input \"41235\" as zipCode for shipping information",
+  "keyword": "When "
 });
 formatter.match({
   "location": "LoginSteps.verifyDisplay()"
 });
 formatter.result({
-  "duration": 2237478000,
+  "duration": 2169051400,
   "status": "passed"
 });
 formatter.match({
@@ -80,14 +120,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 1938364100,
+  "duration": 2055152600,
   "status": "passed"
 });
 formatter.match({
   "location": "SortSteps.verifyDisplayed()"
 });
 formatter.result({
-  "duration": 1103197500,
+  "duration": 1115886100,
   "status": "passed"
 });
 formatter.match({
@@ -100,7 +140,7 @@ formatter.match({
   "location": "SortSteps.sortItem(String)"
 });
 formatter.result({
-  "duration": 3383792100,
+  "duration": 3372432000,
   "status": "passed"
 });
 formatter.match({
@@ -113,25 +153,119 @@ formatter.match({
   "location": "CheckoutSteps.addToCart(String)"
 });
 formatter.result({
-  "duration": 3378166400,
+  "duration": 3124842700,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sauce Labs Onesie",
+      "offset": 35
+    }
+  ],
+  "location": "CheckoutSteps.addToCart(String)"
+});
+formatter.result({
+  "duration": 3129103300,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyBedge()"
 });
 formatter.result({
-  "duration": 1585003400,
+  "duration": 1585232900,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.clickCartBtn()"
 });
 formatter.result({
-  "duration": 3240533500,
+  "duration": 3253170700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CheckoutSteps.verifyPage()"
+});
+formatter.result({
+  "duration": 1591258200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Test.allTheThings() T-Shirt (Red)",
+      "offset": 1
+    }
+  ],
+  "location": "CheckoutSteps.verifyItems(String)"
+});
+formatter.result({
+  "duration": 1573448900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sauce Labs Onesie",
+      "offset": 1
+    }
+  ],
+  "location": "CheckoutSteps.verifyItems(String)"
+});
+formatter.result({
+  "duration": 1625638400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sauce Labs Onesie",
+      "offset": 28
+    }
+  ],
+  "location": "CheckoutSteps.removeItem(String)"
+});
+formatter.result({
+  "duration": 3093983900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CheckoutSteps.clickCheckout()"
+});
+formatter.result({
+  "duration": 3162790800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "CheckoutSteps.verifyCOPage()"
+});
+formatter.result({
+  "duration": 1552597000,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Alifa",
+      "offset": 12
+    },
+    {
+      "val": "Almira",
+      "offset": 43
+    },
+    {
+      "val": "41235",
+      "offset": 74
+    }
+  ],
+  "location": "CheckoutSteps.inputInformation(String,String,String)"
+});
+formatter.result({
+  "duration": 3785385300,
   "status": "passed"
 });
 formatter.after({
-  "duration": 2347982300,
+  "duration": 6643528400,
   "status": "passed"
 });
 });
