@@ -38,8 +38,7 @@ public class LoginPage {
     }
 
     public boolean isDisplayed(){
-        userName.isDisplayed();
-        return true;
+        return userName.isDisplayed();
     }
 
     public String getErrorText(){
