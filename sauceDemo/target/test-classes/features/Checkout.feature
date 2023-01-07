@@ -18,3 +18,8 @@
     When user click checkout button
     Then user is on checkout step one page
     When user input "Alifa" as firstName and input "Almira" as lastName and input "41235" as zipCode for shipping information
+    Then user wil redirected to checkout step two page
+    Then user will see the correct price for "Test.allTheThings() T-Shirt (Red)" as productName
+    Then user will see the correct tax for "Test.allTheThings() T-Shirt (Red)" as productName
+    Then user will see the correct total
+    When user click finish button

@@ -6,7 +6,7 @@
         "before": [
           {
             "result": {
-              "duration": 13514184800,
+              "duration": 12402729300,
               "status": "passed"
             },
             "match": {
@@ -21,7 +21,7 @@
         "after": [
           {
             "result": {
-              "duration": 6643528400,
+              "duration": 2432002400,
               "status": "passed"
             },
             "match": {
@@ -34,7 +34,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2169051400,
+              "duration": 2223613800,
               "status": "passed"
             },
             "line": 6,
@@ -46,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 2055152600,
+              "duration": 1921922200,
               "status": "passed"
             },
             "line": 7,
@@ -68,7 +68,7 @@
           },
           {
             "result": {
-              "duration": 1115886100,
+              "duration": 1113514700,
               "status": "passed"
             },
             "line": 8,
@@ -80,7 +80,7 @@
           },
           {
             "result": {
-              "duration": 3372432000,
+              "duration": 3371231700,
               "status": "passed"
             },
             "line": 9,
@@ -98,7 +98,7 @@
           },
           {
             "result": {
-              "duration": 3124842700,
+              "duration": 3365715400,
               "status": "passed"
             },
             "line": 10,
@@ -116,7 +116,7 @@
           },
           {
             "result": {
-              "duration": 3129103300,
+              "duration": 3147031800,
               "status": "passed"
             },
             "line": 11,
@@ -134,7 +134,7 @@
           },
           {
             "result": {
-              "duration": 1585232900,
+              "duration": 1763230700,
               "status": "passed"
             },
             "line": 12,
@@ -146,7 +146,7 @@
           },
           {
             "result": {
-              "duration": 3253170700,
+              "duration": 3256332600,
               "status": "passed"
             },
             "line": 13,
@@ -158,7 +158,7 @@
           },
           {
             "result": {
-              "duration": 1591258200,
+              "duration": 1611742000,
               "status": "passed"
             },
             "line": 14,
@@ -170,7 +170,7 @@
           },
           {
             "result": {
-              "duration": 1573448900,
+              "duration": 1562103800,
               "status": "passed"
             },
             "line": 15,
@@ -188,7 +188,7 @@
           },
           {
             "result": {
-              "duration": 1625638400,
+              "duration": 1555875500,
               "status": "passed"
             },
             "line": 16,
@@ -206,7 +206,7 @@
           },
           {
             "result": {
-              "duration": 3093983900,
+              "duration": 3098396600,
               "status": "passed"
             },
             "line": 17,
@@ -224,7 +224,7 @@
           },
           {
             "result": {
-              "duration": 3162790800,
+              "duration": 3159749500,
               "status": "passed"
             },
             "line": 18,
@@ -236,7 +236,7 @@
           },
           {
             "result": {
-              "duration": 1552597000,
+              "duration": 1553557500,
               "status": "passed"
             },
             "line": 19,
@@ -248,7 +248,7 @@
           },
           {
             "result": {
-              "duration": 3785385300,
+              "duration": 3819967000,
               "status": "passed"
             },
             "line": 20,
@@ -269,6 +269,78 @@
                 }
               ],
               "location": "CheckoutSteps.inputInformation(String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1548418200,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user wil redirected to checkout step two page",
+            "match": {
+              "location": "CheckoutSteps.verifyCTPage()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1750271600,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "user will see the correct price for \"Test.allTheThings() T-Shirt (Red)\" as productName",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test.allTheThings() T-Shirt (Red)",
+                  "offset": 37
+                }
+              ],
+              "location": "CheckoutSteps.verifyPrice(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1583556800,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "user will see the correct tax for \"Test.allTheThings() T-Shirt (Red)\" as productName",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Test.allTheThings() T-Shirt (Red)",
+                  "offset": 35
+                }
+              ],
+              "location": "CheckoutSteps.verifyTax(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1614964700,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user will see the correct total",
+            "match": {
+              "location": "CheckoutSteps.verifyTotal()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 208200500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user click finish button",
+            "match": {
+              "location": "CheckoutSteps.clickFnsBtn()"
             },
             "keyword": "When "
           }

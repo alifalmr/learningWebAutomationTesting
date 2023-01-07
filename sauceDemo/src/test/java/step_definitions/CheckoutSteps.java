@@ -5,6 +5,7 @@ import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
 import org.example.pageObject.CartPage;
 import org.example.pageObject.CheckoutOnePage;
+import org.example.pageObject.CheckoutTwoPage;
 import org.example.pageObject.InventoryPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -90,6 +91,49 @@ public class CheckoutSteps {
 
         Thread.sleep(3000);
     }
+
+    @Then("user wil redirected to checkout step two page")
+    public void verifyCTPage() throws InterruptedException {
+        CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
+        Assert.assertTrue(checkoutTwoPage.isDisplayed());
+
+        Thread.sleep(1500);
+    }
+
+    @Then("user will see the correct price for \"(.*)\" as productName")
+    public void verifyPrice(String productName) throws InterruptedException {
+        CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
+        Assert.assertEquals(checkoutTwoPage.getPrice(productName),checkoutTwoPage.getItemTotal(),0.009);
+
+        Thread.sleep(1500);
+    }
+
+    @Then("user will see the correct tax for \"(.*)\" as productName")
+    public void verifyTax(String productName) throws InterruptedException {
+        CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
+        double tax = checkoutTwoPage.getPrice(productName) * 0.08;
+        double calTax = Math.round(tax * 100) / 100.0;
+        Assert.assertEquals(calTax,checkoutTwoPage.getTax(),0.009);
+
+        Thread.sleep(1500);
+    }
+
+    @Then("user will see the correct total")
+    public void verifyTotal() throws InterruptedException {
+        CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
+        double getTotal = checkoutTwoPage.getItemTotal() + checkoutTwoPage.getTax();
+        Assert.assertEquals(getTotal, checkoutTwoPage.getTotal(),0.009);
+
+        Thread.sleep(1500);
+    }
+
+    @When("user click finish button")
+    public void clickFnsBtn(){
+        CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
+        checkoutTwoPage.clickFnsButton();
+    }
+
+
 
 
 }
