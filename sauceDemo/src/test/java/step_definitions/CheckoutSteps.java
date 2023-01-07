@@ -3,10 +3,7 @@ package step_definitions;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
-import org.example.pageObject.CartPage;
-import org.example.pageObject.CheckoutOnePage;
-import org.example.pageObject.CheckoutTwoPage;
-import org.example.pageObject.InventoryPage;
+import org.example.pageObject.*;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
@@ -128,9 +125,27 @@ public class CheckoutSteps {
     }
 
     @When("user click finish button")
-    public void clickFnsBtn(){
+    public void clickFnsBtn() throws InterruptedException {
         CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
         checkoutTwoPage.clickFnsButton();
+
+        Thread.sleep(3000);
+    }
+
+    @Then("user is redirected to checkout complete")
+    public void verifyCCPage() throws InterruptedException {
+        CompletePage completePage = new CompletePage(webDriver);
+        Assert.assertTrue(completePage.isDisplayed());
+
+        Thread.sleep(1500);
+    }
+
+    @Then("user get gratitude message")
+    public void verifyMessage(String gratMessage) throws InterruptedException {
+        CompletePage completePage = new CompletePage(webDriver);
+        Assert.assertEquals(gratMessage,completePage.getMessage());
+
+        Thread.sleep(3000);
     }
 
 

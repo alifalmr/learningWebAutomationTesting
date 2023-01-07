@@ -23,3 +23,5 @@
     Then user will see the correct tax for "Test.allTheThings() T-Shirt (Red)" as productName
     Then user will see the correct total
     When user click finish button
+    Then user is redirected to checkout complete
+    Then user get gratitude message
