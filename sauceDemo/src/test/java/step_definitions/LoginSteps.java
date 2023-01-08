@@ -4,6 +4,7 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import gherkin.lexer.Th;
+import org.example.pageObject.InventoryPage;
 import org.example.pageObject.LoginPage;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
@@ -32,6 +33,14 @@ public class LoginSteps {
         loginPage.setUserName(userName);
         loginPage.setPassword(password);
         loginPage.clickLogin();
+
+        Thread.sleep(1000);
+    }
+
+    @Then("user is redirected to inventory page")
+    public void verifyDisplayed() throws InterruptedException {
+        InventoryPage inventoryPage = new InventoryPage(webDriver);
+        Assert.assertTrue(inventoryPage.isDisplayed());
 
         Thread.sleep(1000);
     }

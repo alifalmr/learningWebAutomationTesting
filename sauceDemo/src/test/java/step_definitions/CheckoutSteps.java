@@ -23,7 +23,7 @@ public class CheckoutSteps {
         Thread.sleep(3000);
     }
 
-    @Then("user can see the cart bedge appeared")
+    @Then("user see the cart bedge appeared")
     public void verifyBedge() throws InterruptedException {
         InventoryPage inventoryPage = new InventoryPage(webDriver);
         Assert.assertTrue(inventoryPage.cartBdgDisplayed());
@@ -38,7 +38,7 @@ public class CheckoutSteps {
         Thread.sleep(3000);
     }
 
-    @Then("user will be directed to cart page")
+    @Then("user is redirected to cart page")
     public void verifyPage() throws InterruptedException {
         CartPage cartPage = new CartPage(webDriver);
         Assert.assertTrue(cartPage.isDisplayed());
@@ -70,7 +70,7 @@ public class CheckoutSteps {
         Thread.sleep(3000);
     }
 
-    @Then("user is on checkout step one page")
+    @Then("user is redirected to checkout step one page")
     public void verifyCOPage() throws InterruptedException {
         CheckoutOnePage checkoutOnePage = new CheckoutOnePage(webDriver);
         Assert.assertTrue(checkoutOnePage.isDisplayed());
@@ -89,7 +89,7 @@ public class CheckoutSteps {
         Thread.sleep(3000);
     }
 
-    @Then("user wil redirected to checkout step two page")
+    @Then("user is redirected to checkout step two page")
     public void verifyCTPage() throws InterruptedException {
         CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
         Assert.assertTrue(checkoutTwoPage.isDisplayed());
@@ -97,7 +97,7 @@ public class CheckoutSteps {
         Thread.sleep(1500);
     }
 
-    @Then("user will see the correct price for \"(.*)\" as productName")
+    @Then("user see the correct price for \"(.*)\" as productName")
     public void verifyPrice(String productName) throws InterruptedException {
         CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
         Assert.assertEquals(checkoutTwoPage.getPrice(productName),checkoutTwoPage.getItemTotal(),0.009);
@@ -105,7 +105,7 @@ public class CheckoutSteps {
         Thread.sleep(1500);
     }
 
-    @Then("user will see the correct tax for \"(.*)\" as productName")
+    @Then("user see the correct tax for \"(.*)\" as productName")
     public void verifyTax(String productName) throws InterruptedException {
         CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
         double tax = checkoutTwoPage.getPrice(productName) * 0.08;
@@ -115,7 +115,7 @@ public class CheckoutSteps {
         Thread.sleep(1500);
     }
 
-    @Then("user will see the correct total")
+    @Then("user see the correct total")
     public void verifyTotal() throws InterruptedException {
         CheckoutTwoPage checkoutTwoPage = new CheckoutTwoPage(webDriver);
         double getTotal = checkoutTwoPage.getItemTotal() + checkoutTwoPage.getTax();
@@ -140,13 +140,15 @@ public class CheckoutSteps {
         Thread.sleep(1500);
     }
 
-    @Then("user get gratitude message")
+    @Then("user get \"(.*)\" as gratMessage for gratitude message")
     public void verifyMessage(String gratMessage) throws InterruptedException {
         CompletePage completePage = new CompletePage(webDriver);
         Assert.assertEquals(gratMessage,completePage.getMessage());
 
         Thread.sleep(3000);
     }
+
+
 
 
 
