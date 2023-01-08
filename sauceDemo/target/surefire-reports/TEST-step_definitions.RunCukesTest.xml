@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="23" failures="0" name="step_definitions.RunCukesTest" time="0.748" errors="0" skipped="0">
+<testsuite tests="23" failures="0" name="step_definitions.RunCukesTest" time="0.737" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.3.1"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -66,27 +66,27 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Scenario: Add an item to cart" name="Given user open the website sauce demo" time="0.002"/>
+  <testcase classname="Scenario: Add an item to cart" name="Given user open the website sauce demo" time="0.003"/>
   <testcase classname="Scenario: Add an item to cart" name="When user input &quot;standard_user&quot; as userName and input &quot;secret_sauce&quot; as password" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user is redirected to inventory page" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="When user choose &quot;Name (Z to A)&quot; as option for sorting the items" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="And user click add to cart button for &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="And user click add to cart button for &quot;Sauce Labs Onesie&quot; as productName" time="0"/>
+  <testcase classname="Scenario: Add an item to cart" name="And user click add to cart button for &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user see the cart bedge appeared" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="When user click cart button" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user is redirected to cart page" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="Then &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName appeared on card page" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then &quot;Sauce Labs Onesie&quot; as productName appeared on card page" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="And user click remove item for &quot;Sauce Labs Onesie&quot; as productName" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="When user click checkout button" time="0.002"/>
+  <testcase classname="Scenario: Add an item to cart" name="Then &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName appeared on card page" time="0.001"/>
+  <testcase classname="Scenario: Add an item to cart" name="And user click remove item for &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName" time="0"/>
+  <testcase classname="Scenario: Add an item to cart" name="When user click checkout button" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user is redirected to checkout step one page" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="When user input &quot;Alifa&quot; as firstName and input &quot;Almira&quot; as lastName and input &quot;41235&quot; as zipCode for shipping information" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user is redirected to checkout step two page" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="Then user see the correct price for &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="Then user see the correct tax for &quot;Test.allTheThings() T-Shirt (Red)&quot; as productName" time="0"/>
+  <testcase classname="Scenario: Add an item to cart" name="Then user see the correct price for &quot;Sauce Labs Onesie&quot; as productName" time="0"/>
+  <testcase classname="Scenario: Add an item to cart" name="Then user see the correct tax for &quot;Sauce Labs Onesie&quot; as productName" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user see the correct total" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="When user click finish button" time="0"/>
   <testcase classname="Scenario: Add an item to cart" name="Then user is redirected to checkout complete" time="0"/>
-  <testcase classname="Scenario: Add an item to cart" name="Then user get &quot;THANK YOU FOR YOUR ORDER&quot; as gratMessage for gratitude message" time="0.001"/>
-  <testcase classname="Scenario: Add an item to cart" name="Scenario: Add an item to cart" time="0.743"/>
+  <testcase classname="Scenario: Add an item to cart" name="Then user get &quot;THANK YOU FOR YOUR ORDER&quot; as gratMessage for gratitude message" time="0"/>
+  <testcase classname="Scenario: Add an item to cart" name="Scenario: Add an item to cart" time="0.733"/>
 </testsuite>

@@ -51,7 +51,7 @@ public class InventoryPage {
     }
 
     public void clickAddBtn(String productName){
-        driver.findElement(By.xpath("//button[@id='add-to-cart-" + productName.toLowerCase().replace(" ","-") + "']")).click();
+        driver.findElement(By.xpath("//div[.='"+ productName +"']/ancestor::div[@class='inventory_item_label']/following-sibling::div[@class='pricebar']/button")).click();
     }
 
     public void selectOption(String opt){

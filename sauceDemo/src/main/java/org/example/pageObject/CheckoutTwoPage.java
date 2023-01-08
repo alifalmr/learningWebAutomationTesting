@@ -34,7 +34,7 @@ public class CheckoutTwoPage {
     }
 
     public String getPriceStr(String productName){
-        return driver.findElement(By.xpath("//div[@class='cart_list']/div[contains(.,'"+ productName +"')]//div[@class='inventory_item_price']")).getText();
+        return driver.findElement(By.xpath("//a[.='"+ productName +"']/following-sibling::div[@class='item_pricebar']/div")).getText();
     }
 
     public double getPrice(String productName){

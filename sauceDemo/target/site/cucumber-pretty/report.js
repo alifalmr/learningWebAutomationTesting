@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 3754949700,
+  "duration": 6169568000,
   "status": "passed"
 });
 formatter.scenario({
@@ -46,12 +46,12 @@ formatter.step({
 });
 formatter.step({
   "line": 10,
-  "name": "user click add to cart button for \"Test.allTheThings() T-Shirt (Red)\" as productName",
+  "name": "user click add to cart button for \"Sauce Labs Onesie\" as productName",
   "keyword": "And "
 });
 formatter.step({
   "line": 11,
-  "name": "user click add to cart button for \"Sauce Labs Onesie\" as productName",
+  "name": "user click add to cart button for \"Test.allTheThings() T-Shirt (Red)\" as productName",
   "keyword": "And "
 });
 formatter.step({
@@ -71,17 +71,17 @@ formatter.step({
 });
 formatter.step({
   "line": 15,
-  "name": "\"Test.allTheThings() T-Shirt (Red)\" as productName appeared on card page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 16,
   "name": "\"Sauce Labs Onesie\" as productName appeared on card page",
   "keyword": "Then "
 });
 formatter.step({
+  "line": 16,
+  "name": "\"Test.allTheThings() T-Shirt (Red)\" as productName appeared on card page",
+  "keyword": "Then "
+});
+formatter.step({
   "line": 17,
-  "name": "user click remove item for \"Sauce Labs Onesie\" as productName",
+  "name": "user click remove item for \"Test.allTheThings() T-Shirt (Red)\" as productName",
   "keyword": "And "
 });
 formatter.step({
@@ -106,12 +106,12 @@ formatter.step({
 });
 formatter.step({
   "line": 22,
-  "name": "user see the correct price for \"Test.allTheThings() T-Shirt (Red)\" as productName",
+  "name": "user see the correct price for \"Sauce Labs Onesie\" as productName",
   "keyword": "Then "
 });
 formatter.step({
   "line": 23,
-  "name": "user see the correct tax for \"Test.allTheThings() T-Shirt (Red)\" as productName",
+  "name": "user see the correct tax for \"Sauce Labs Onesie\" as productName",
   "keyword": "Then "
 });
 formatter.step({
@@ -138,7 +138,7 @@ formatter.match({
   "location": "LoginSteps.verifyDisplay()"
 });
 formatter.result({
-  "duration": 1679146900,
+  "duration": 1689023700,
   "status": "passed"
 });
 formatter.match({
@@ -155,14 +155,14 @@ formatter.match({
   "location": "LoginSteps.inputCredential(String,String)"
 });
 formatter.result({
-  "duration": 1328457700,
+  "duration": 1307099400,
   "status": "passed"
 });
 formatter.match({
   "location": "LoginSteps.verifyDisplayed()"
 });
 formatter.result({
-  "duration": 1052874200,
+  "duration": 1050205300,
   "status": "passed"
 });
 formatter.match({
@@ -175,20 +175,7 @@ formatter.match({
   "location": "SortSteps.sortItem(String)"
 });
 formatter.result({
-  "duration": 3139110900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Test.allTheThings() T-Shirt (Red)",
-      "offset": 35
-    }
-  ],
-  "location": "CheckoutSteps.addToCart(String)"
-});
-formatter.result({
-  "duration": 3063466300,
+  "duration": 3208241000,
   "status": "passed"
 });
 formatter.match({
@@ -201,28 +188,54 @@ formatter.match({
   "location": "CheckoutSteps.addToCart(String)"
 });
 formatter.result({
-  "duration": 3073608600,
+  "duration": 3058905600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Test.allTheThings() T-Shirt (Red)",
+      "offset": 35
+    }
+  ],
+  "location": "CheckoutSteps.addToCart(String)"
+});
+formatter.result({
+  "duration": 3063530600,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyBedge()"
 });
 formatter.result({
-  "duration": 1553584500,
+  "duration": 1556616600,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.clickCartBtn()"
 });
 formatter.result({
-  "duration": 3082988400,
+  "duration": 3077567900,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyPage()"
 });
 formatter.result({
-  "duration": 1603760300,
+  "duration": 1630389300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sauce Labs Onesie",
+      "offset": 1
+    }
+  ],
+  "location": "CheckoutSteps.verifyItems(String)"
+});
+formatter.result({
+  "duration": 1550401000,
   "status": "passed"
 });
 formatter.match({
@@ -235,47 +248,34 @@ formatter.match({
   "location": "CheckoutSteps.verifyItems(String)"
 });
 formatter.result({
-  "duration": 1555350100,
+  "duration": 1546317800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Sauce Labs Onesie",
-      "offset": 1
-    }
-  ],
-  "location": "CheckoutSteps.verifyItems(String)"
-});
-formatter.result({
-  "duration": 1544521400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Sauce Labs Onesie",
+      "val": "Test.allTheThings() T-Shirt (Red)",
       "offset": 28
     }
   ],
   "location": "CheckoutSteps.removeItem(String)"
 });
 formatter.result({
-  "duration": 3064292400,
+  "duration": 3065239500,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.clickCheckout()"
 });
 formatter.result({
-  "duration": 3081288700,
+  "duration": 3081858600,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyCOPage()"
 });
 formatter.result({
-  "duration": 1551802900,
+  "duration": 1554515000,
   "status": "passed"
 });
 formatter.match({
@@ -296,61 +296,61 @@ formatter.match({
   "location": "CheckoutSteps.inputInformation(String,String,String)"
 });
 formatter.result({
-  "duration": 3398758500,
+  "duration": 3315417900,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyCTPage()"
 });
 formatter.result({
-  "duration": 1545857000,
+  "duration": 1545769600,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Test.allTheThings() T-Shirt (Red)",
+      "val": "Sauce Labs Onesie",
       "offset": 32
     }
   ],
   "location": "CheckoutSteps.verifyPrice(String)"
 });
 formatter.result({
-  "duration": 1568252800,
+  "duration": 1569042500,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "Test.allTheThings() T-Shirt (Red)",
+      "val": "Sauce Labs Onesie",
       "offset": 30
     }
   ],
   "location": "CheckoutSteps.verifyTax(String)"
 });
 formatter.result({
-  "duration": 1576086300,
+  "duration": 1568045100,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyTotal()"
 });
 formatter.result({
-  "duration": 1586908900,
+  "duration": 1584642900,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.clickFnsBtn()"
 });
 formatter.result({
-  "duration": 3086507700,
+  "duration": 3077267300,
   "status": "passed"
 });
 formatter.match({
   "location": "CheckoutSteps.verifyCCPage()"
 });
 formatter.result({
-  "duration": 1550719200,
+  "duration": 1545944800,
   "status": "passed"
 });
 formatter.match({
@@ -363,11 +363,11 @@ formatter.match({
   "location": "CheckoutSteps.verifyMessage(String)"
 });
 formatter.result({
-  "duration": 3041555500,
+  "duration": 3040892500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 744268700,
+  "duration": 732033200,
   "status": "passed"
 });
 });
