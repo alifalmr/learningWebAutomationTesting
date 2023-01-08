@@ -19,6 +19,9 @@ public class CompletePage {
     @FindBy(xpath = "//h2[@class='complete-header']")
     private WebElement compMessage;
 
+    @FindBy(xpath = "//button[@id='back-to-products']")
+    private WebElement backButton;
+
     public boolean isDisplayed(){
         return pageTitle.isDisplayed();
     }
